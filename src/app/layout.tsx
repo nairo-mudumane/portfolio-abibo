@@ -40,9 +40,9 @@ export default function RootLayout({
   return (
     <html lang="eng">
       <body className={appFont.className}>
-        <main className="bg-[#111] text-white w-screen min-h-screen">
+        <div className="bg-[#111] text-white w-screen min-h-screen">
           {children}
-        </main>
+        </div>
       </body>
     </html>
   );

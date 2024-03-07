@@ -13,16 +13,16 @@ export function Header() {
   const isActive = (href: string) => href === currentPath;
 
   return (
-    <StyledHeader className="py-4">
-      <ContainerPage>
-        <Mobile />
+    <StyledHeader className=" py-4">
+      <Mobile />
 
+      <ContainerPage>
         <ul className="hidden md:flex w-max max-w-full ml-auto py-8 px-10 gap-8 items-center justify-between">
           {APP_LINKS.map(({ label, link }, index) => (
             <li key={index}>
               <a
                 href={link}
-                className={clsx("font-bold", isActive(link) ? "active" : "")}
+                className={clsx(isActive(link) ? "active" : "", "font-bold")}
               >
                 {label}
               </a>
